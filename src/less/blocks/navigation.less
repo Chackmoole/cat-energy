@@ -1,4 +1,29 @@
 .navigation {
   position: absolute;
-  display: none;
+  top: 66px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  //display: none;
+}
+
+.navigation__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 66px;
+  width: 320px;
+  font-family: @font-title;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-top: 1px solid @color-gray-silver;
+  color: @color-black;
+  background-color: @color-white;
+
+  &:last-child {
+    border-bottom: 1px solid @color-gray-silver;
+  }
 }
