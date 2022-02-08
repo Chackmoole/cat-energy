@@ -1,0 +1,19 @@
+.button {
+  color: @color-white;
+  width: 280px;
+  height: 40px;
+  border: none;
+  font-family: @font-title;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: @color-green;
+
+  &:hover {
+    background-color: @color-green-dark;
+  }
+
+  &:active {
+    color: fade(@color-white, 30%);
+  }
+}
