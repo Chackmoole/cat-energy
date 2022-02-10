@@ -16,6 +16,7 @@
     width: 24px;
     height: 2px;
     background-color: @color-black;
+    box-shadow: 0 7px 0 0 @color-black;
   }
 
   &::after {
@@ -36,6 +37,7 @@
     &::before {
       top: 11px;
       transform: rotate(-45deg);
+      box-shadow: none;
     }
 
     &::after {
@@ -43,11 +45,4 @@
       transform: rotate(45deg);
     }
   }
-}
-
-.burger-button__line {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background-color: @color-black;
 }
