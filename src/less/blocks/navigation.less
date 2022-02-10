@@ -1,0 +1,26 @@
+.navigation {
+  position: absolute;
+  top: 66px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 1px solid @color-gray-silver;
+  z-index: 2;
+
+  &--disable {
+    display: none;
+  }
+}
+
+.navigation__item {
+  display: block;
+  text-align: center;
+  min-height: 66px;
+  width: 320px;
+  font-family: @font-title;
+  font-size: 20px;
+  line-height: 65px;
+  text-transform: uppercase;
+  border-top: 1px solid @color-gray-silver;
+  color: @color-black;
+  background-color: @color-white;
+}
