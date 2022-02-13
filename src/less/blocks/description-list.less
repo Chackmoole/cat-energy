@@ -1,0 +1,34 @@
+.description-list {
+  margin: 0;
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.description-list__box {
+  position: relative;
+}
+
+.description-list__subtitle {
+  .title(24px, 24px);
+  border: 1px solid @color-gray;
+  border-radius: 3px;
+  padding: 14px 8px 18px;
+  margin: 0 auto;
+  text-align: center;
+  width: 124px;
+}
+
+.description-list__item {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  font-size: 12px;
+  line-height: 12px;
+  color: @color-gray-dark;
+  width: 87px;
+  margin: 0;
+  text-align: center;
+  background-color: @color-gray-light;
+}

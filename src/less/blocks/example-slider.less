@@ -1,0 +1,40 @@
+.example-slider__img-block {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.example-slider__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.example-slider__button {
+  .title(16px, 24px);
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+}
+
+.example-slider__slider-line {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  background-color: @color-white;
+  border: 1px solid @color-gray;
+  border-radius: 6px;
+}
+
+.example-slider__roller {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6px;
+  width: 35px;
+  height: 6px;
+  border: none;
+  border-radius: 6px;
+  background-color: @color-green;
+}
