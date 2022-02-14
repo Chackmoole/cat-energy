@@ -1,8 +1,16 @@
 .description-list {
   margin: 0;
   display: flex;
-  gap: 32px;
+  flex-direction: column;
+  //gap: 32px;
   margin-bottom: 32px;
+}
+
+.description-list__wrapper {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .description-list__box {
@@ -31,4 +39,11 @@
   margin: 0;
   text-align: center;
   background-color: @color-gray-light;
+}
+
+.description-list {
+  .title(14px, 20px);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
 }

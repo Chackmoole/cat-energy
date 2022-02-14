@@ -1,24 +1,27 @@
-.example-slider__img-block {
+.slider__img-block {
   display: flex;
   overflow: hidden;
-  margin-bottom: 28px;
+  margin-bottom: 36px;
+  min-height: 240px;
 }
 
-.example-slider__block {
+.slider__controls {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  gap: 16px;
+  width: 200px;
+  margin: 0 auto;
 }
 
-.example-slider__button {
+.slider__button {
   .title(16px, 24px);
+  padding: 0;
   text-transform: uppercase;
   border: none;
   background-color: transparent;
 }
 
-.example-slider__slider-line {
+.slider__slider-line {
   position: relative;
   width: 84px;
   height: 14px;
@@ -27,7 +30,7 @@
   border-radius: 6px;
 }
 
-.example-slider__roller {
+.slider__roller {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
