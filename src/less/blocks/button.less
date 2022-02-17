@@ -1,7 +1,7 @@
 .button {
   color: @color-white;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   border: none;
   font-family: @font-title;
   font-size: 14px;
@@ -9,6 +9,7 @@
   text-transform: uppercase;
   background-color: @color-green;
   z-index: 1;
+  padding: 11px;
 
   &:hover {
     background-color: @color-green-dark;
@@ -20,8 +21,9 @@
 
   @media (min-width: 768px) {
     width: 244px;
-    height: 54px;
+    min-height: 54px;
     font-size: 20px;
     line-height: 20px;
+    padding: 7px;
   }
 }
