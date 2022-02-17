@@ -5,4 +5,18 @@
   justify-content: space-between;
   min-height: 66px;
   width: 320px;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    min-height: 78px;
+    align-items: flex-end;
+  }
+}
+
+.header__logo {
+  &--text {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 }

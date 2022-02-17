@@ -15,7 +15,10 @@
   <body>
     <header class="header layout">
       <a class="header__logo" href="#">
-        <img src="img/logo-mobile.svg" width="34" height="38" alt="логотип cat energy" />
+        <picture>
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)" />
+          <img src="img/logo-mobile.svg" alt="логотип cat energy" />
+        </picture>
       </a>
       <a class="header__logo header__logo--text" href="#">
         <img src="img/logo-mobile2.svg" width="101" height="18" alt="" />
@@ -24,7 +27,7 @@
         <span class="visually-hidden">кнопка меню навигации по сайту</span>
       </button>
       <nav class="navigation navigation--disable">
-        <a class="navigation__item" href="index.html">главная</a>
+        <a class="navigation__item navigation__item--active" href="index.html">главная</a>
         <a class="navigation__item" href="catalog.html">каталог продукции</a>
         <a class="navigation__item" href="#">подбор программы</a>
       </nav>
@@ -196,7 +199,11 @@
         </div>
         <div class="layout map__box">
           <img
-              class="map__mark" src="img/marker-icon.png" width="57" height="53" alt="карта расположения компании cat energy"
+            class="map__mark"
+            src="img/marker-icon.png"
+            width="57"
+            height="53"
+            alt="карта расположения компании cat energy"
           />
         </div>
       </section>
@@ -208,14 +215,13 @@
           <img
             class="footer__img"
             src="img/footer-logo.svg"
-            alt="логотип компании cat energy"/>
-
+            alt="логотип компании cat energy"
+          />
         </a>
       </div>
       <section class="socials">
         <h3 class="visually-hidden">
-            список ссылок перехода в социальные сети компании cat energy
-
+          список ссылок перехода в социальные сети компании cat energy
         </h3>
         <ul class="socials__list">
           <li>
