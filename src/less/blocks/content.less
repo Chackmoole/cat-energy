@@ -1,5 +1,4 @@
 .content {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +22,7 @@
     justify-content: start;
     align-items: start;
     min-height: 860px;
-    padding: 60px 118px;
+    padding: 60px 30px;
   }
 }
 
@@ -38,9 +37,9 @@
 
   @media (min-width: 768px) {
     color: @color-black;
-    max-width: 414px;
+    max-width: 524px;
     text-align: left;
-    margin: 0 0 40px 0;
+    margin: 0 90px 40px 90px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -59,7 +58,15 @@
     color: @color-black;
     font-size: 20px;
     line-height: 20px;
-    margin: 0 0 48px 0;
+    margin: 0 90px 48px 90px;
+  }
+}
+
+.content__button {
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    margin: 0 90px;
   }
 }
 
@@ -67,8 +74,7 @@
   margin-bottom: 4px;
 
   @media (min-width: 768px) {
-    position: absolute;
-    bottom: -20px;
-    left: 30px;
+    order: 2;
+    margin-top: -75px;
   }
 }
