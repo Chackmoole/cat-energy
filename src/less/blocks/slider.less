@@ -1,8 +1,29 @@
 .slider__inner {
-  display: flex;
-  overflow: hidden;
-  margin-bottom: 36px;
+  position: relative;
+  margin: 0 auto 36px;
   min-height: 240px;
+  width: 280px;
+
+  @media (min-width: 768px) {
+    width: 676px;
+    min-height: 520px;
+    margin-bottom: 10px;
+  }
+}
+
+.slider__slide {
+  position: absolute;
+  width: 280px;
+  height: 235px;
+
+  &--hide {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    width: 676px;
+    min-height: 520px;
+  }
 }
 
 .slider__controls {
@@ -11,6 +32,12 @@
   gap: 16px;
   width: 200px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 676px;
+    justify-content: center;
+    gap: 18px;
+  }
 }
 
 .slider__button {
@@ -19,6 +46,11 @@
   text-transform: uppercase;
   border: none;
   background-color: transparent;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .slider__line {
@@ -28,6 +60,14 @@
   background-color: @color-white;
   border: 1px solid @color-gray;
   border-radius: 6px;
+
+  @media (min-width: 768px) {
+    width: 428px;
+    height: 6px;
+    border-right: 6px;
+    background-color: @color-gray;
+    margin-top: 4px;
+  }
 }
 
 .slider__roller {
@@ -40,4 +80,29 @@
   border: none;
   border-radius: 6px;
   background-color: @color-green;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    position: relative;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    left: 50%;
+    top: calc(50% + 1px);
+    border: 1px solid @color-gray;
+    background-color: @color-white;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: @color-green;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+  }
 }
