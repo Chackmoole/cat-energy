@@ -11,14 +11,28 @@
   }
 }
 
-.slider__slide {
+.slider__slice {
+  @media @tablet {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 50%;
+    background: linear-gradient(#fff 0, #fff 165px, #f2f2f2 165px, #f2f2f2 100%);
+
+    &--hidden {
+      width: 100%;
+      z-index: 1;
+    }
+  }
+}
+
+.slider__image {
   position: absolute;
   width: 280px;
   height: 235px;
-
-  &--hide {
-    display: none;
-  }
 
   @media @tablet {
     width: 676px;

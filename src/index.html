@@ -165,21 +165,25 @@
           </dl>
           <div class="slider">
             <div class="slider__inner">
-              <picture class="slider__slide">
-                <source srcset="img/cat-fat-tablet.png" media="(min-width: 768px)" />
-                <img
-                  src="img/fat.png"
-                  alt="изображение кота до приема корма cat energy"
-                />
-              </picture>
+              <div class="slider__slice">
+                <picture class="slider__image">
+                  <source srcset="img/cat-fat-tablet.png" media="(min-width: 768px)" />
+                  <img
+                    src="img/fat.png"
+                    alt="изображение кота до приема корма cat energy"
+                  />
+                </picture>
+              </div>
 
-              <picture class="slider__slide slider__slide--hide">
-                <source srcset="img/cat-skinny-tablet.png" media="(min-width: 768px)" />
-                <img
-                  src="img/skinny.png"
-                  alt="изображение кота после приема корма cat energy"
-                />
-              </picture>
+              <div class="slider__slice slider__slice--hidden">
+                <picture class="slider__image">
+                  <source srcset="img/cat-skinny-tablet.png" media="(min-width: 768px)" />
+                  <img
+                    src="img/skinny.png"
+                    alt="изображение кота после приема корма cat energy"
+                  />
+                </picture>
+              </div>
             </div>
             <div class="slider__controls">
               <button class="slider__button slider__button--prev" type="button">
