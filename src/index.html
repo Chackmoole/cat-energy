@@ -199,16 +199,19 @@
       <section class="map">
         <div class="map__address layout">
           <h3 class="map__title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-          <p class="map__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="map__description">
+            ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
+          </p>
         </div>
         <div class="layout map__box">
-          <img
-            class="map__mark"
-            src="img/marker-icon.png"
-            width="57"
-            height="53"
-            alt="карта расположения компании cat energy"
-          />
+          <picture>
+            <source srcset="img/map-pin-tablet.png" media="(min-width: 768px)" />
+            <img
+              class="map__mark"
+              src="img/marker-icon.png"
+              alt="карта расположения компании cat energy"
+            />
+          </picture>
         </div>
       </section>
     </main>
