@@ -14,8 +14,6 @@
     background-image: none;
     justify-content: start;
     align-items: start;
-    min-height: 860px;
-    margin-bottom: 12px;
   }
 
   @media @desktop {
@@ -28,7 +26,6 @@
       ),
       url('../../img/content-background-desktop-full.jpg') no-repeat calc(50% + 360px)
         bottom;
-    min-height: 694px;
     margin-bottom: 86px;
   }
 }
@@ -36,15 +33,20 @@
 .content__wrapper {
   padding-top: 26px;
   padding-bottom: 24px;
+
+  @media @desktop {
+    padding-top: 110px;
+    padding-bottom: 0;
+  }
 }
 
 .content__inner {
   position: relative;
   @media @tablet {
-    padding: 34px 87px 60px;
+    padding: 34px 87px 502px;
   }
   @media @desktop {
-    padding: 200px 80px 40px;
+    padding: 114px 80px 185px;
   }
 }
 
@@ -101,7 +103,7 @@
 
   @media @tablet {
     position: absolute;
-    bottom: -466px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 0;
@@ -110,7 +112,7 @@
 
   @media @desktop {
     position: absolute;
-    bottom: -94px;
+    bottom: 50px;
     left: calc(50% + 114px);
     z-index: 0;
   }
