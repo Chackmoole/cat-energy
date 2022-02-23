@@ -6,6 +6,11 @@
   @media @tablet {
     gap: 30px;
   }
+
+  @media @desktop {
+    flex-direction: row;
+    gap: 86px;
+  }
 }
 
 .features__wrapper {
@@ -18,11 +23,18 @@
     justify-content: space-between;
     padding: 78px 26px 54px 54px;
   }
+
+  @media @desktop {
+    padding: 74px 54px 60px 52px;
+  }
 }
 
 .features__block {
   @media @tablet {
     width: 340px;
+  }
+  @media @desktop {
+    width: 460px;
   }
 }
 
@@ -54,6 +66,22 @@
       height: 200px;
     }
   }
+
+  @media @desktop {
+    position: absolute;
+    top: 36px;
+    left: 50px;
+    width: 100px;
+    height: 106px;
+    margin: 0;
+
+    &--weight {
+      top: 40px;
+      left: 30px;
+      width: 134px;
+      height: 100px;
+    }
+  }
 }
 
 .features__title {
@@ -65,8 +93,13 @@
   @media @tablet {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     padding-left: 0;
+  }
+
+  @media @desktop {
+    padding-left: 160px;
+    margin-bottom: 74px;
   }
 }
 
@@ -81,10 +114,15 @@
   @media @tablet {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     border: none;
-    min-height: 96px;
     padding: 0;
+    width: 340px;
+  }
+
+  @media @desktop {
+    width: 467px;
+    margin-bottom: 24px;
   }
 }
 
@@ -98,7 +136,7 @@
   &::after {
     content: '';
     position: absolute;
-    right: 14px;
+    right: 24px;
     top: 50%;
     transform: translateY(-50%);
     width: 18px;
@@ -110,7 +148,7 @@
   &::before {
     content: '';
     position: absolute;
-    right: 8px;
+    right: 18px;
     top: 50%;
     transform: translateY(-50%);
     background-color: transparent;
@@ -120,21 +158,40 @@
     transition: right 0.3s;
   }
 
-  &:hover::after {
-    right: 6px;
+  &:active::after {
+    right: 16px;
     width: 26px;
   }
 
-  &:hover::before {
-    right: 0;
-  }
-
-  &:active {
-    opacity: 0.3;
+  &:active::before {
+    right: 10px;
   }
 
   @media @tablet {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media @desktop {
+    &::after {
+      right: 14px;
+    }
+
+    &::before {
+      right: 8px;
+    }
+
+    &:hover::after {
+      right: 6px;
+      width: 26px;
+    }
+
+    &:hover::before {
+      right: 0;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

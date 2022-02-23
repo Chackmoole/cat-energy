@@ -1,11 +1,4 @@
 .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-width: 320px;
-  min-height: 510px;
-  padding: 28px 0 22px;
   background-image: linear-gradient(
       180deg,
       rgba(104, 183, 56, 0.85) 0,
@@ -21,8 +14,39 @@
     background-image: none;
     justify-content: start;
     align-items: start;
-    min-height: 860px;
-    padding: 60px 30px 0;
+  }
+
+  @media @desktop {
+    background: linear-gradient(
+        90deg,
+        @color-white 0,
+        @color-white 50%,
+        rgba(104, 183, 56, 0.85) 50%,
+        rgba(104, 183, 56, 0.85) 100%
+      ),
+      url('../../img/content-background-desktop-full.jpg') no-repeat calc(50% + 360px)
+        bottom;
+    margin-bottom: 86px;
+  }
+}
+
+.content__wrapper {
+  padding-top: 26px;
+  padding-bottom: 24px;
+
+  @media @desktop {
+    padding-top: 110px;
+    padding-bottom: 0;
+  }
+}
+
+.content__inner {
+  position: relative;
+  @media @tablet {
+    padding: 34px 87px 502px;
+  }
+  @media @desktop {
+    padding: 114px 80px 184px;
   }
 }
 
@@ -33,21 +57,27 @@
   line-height: 36px;
   margin: 0 0 24px 0;
   text-align: center;
-  max-width: 320px;
 
   @media @tablet {
     color: @color-black;
     max-width: 524px;
     text-align: left;
-    margin: 0 90px 40px 90px;
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 44px;
+  }
+
+  @media @desktop {
+    font-size: 60px;
+    line-height: 60px;
+    z-index: 2;
+    margin: 0 0 38px;
   }
 }
 
 .content__description {
   .text-white();
-  margin: 0 0 26px 0;
+  margin: 0 0 28px 0;
   font-family: @font-title;
   font-size: 14px;
   line-height: 14px;
@@ -58,23 +88,42 @@
     color: @color-black;
     font-size: 20px;
     line-height: 20px;
-    margin: 0 90px 48px 90px;
+    text-align: left;
+    margin: 0 0 48px 0;
+  }
+
+  @media @desktop {
+    z-index: 2;
+    margin: 0 0 50px 0;
+  }
+}
+
+.content__img {
+  margin: 0 auto 4px;
+
+  @media @tablet {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0;
+    z-index: -1;
+  }
+
+  @media @desktop {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% + 114px);
+    z-index: 0;
   }
 }
 
 .content__button {
   z-index: 1;
+  margin: 0 auto;
+  display: block;
 
   @media @tablet {
-    margin: 0 90px;
-  }
-}
-
-.content__img {
-  margin-bottom: 4px;
-
-  @media @tablet {
-    order: 2;
-    margin: -75px 0 0 0;
+    margin: 0;
   }
 }

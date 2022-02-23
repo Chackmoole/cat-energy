@@ -24,7 +24,7 @@
     }
   }
 
-  @media @tablet {
+  @media @desktop {
     min-width: 478px;
   }
 }
@@ -61,8 +61,15 @@
     }
   }
 
-  @media @tablet {
+  @media @desktop {
+    .state();
     font-size: 20px;
     line-height: 30px;
+    color: @color-white;
+    background-color: transparent;
+
+    &--active::after {
+      background-color: @color-white;
+    }
   }
 }
