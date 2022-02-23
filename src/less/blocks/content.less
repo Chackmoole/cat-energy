@@ -34,20 +34,17 @@
 }
 
 .content__wrapper {
-  padding: 26px 20px 24px;
-
-  @media @tablet {
-    padding: 0;
-  }
+  padding-top: 26px;
+  padding-bottom: 24px;
 }
 
 .content__inner {
   position: relative;
   @media @tablet {
-    padding: 60px 117px;
+    padding: 34px 87px 60px;
   }
   @media @desktop {
-    padding: 226px 107px 40px;
+    padding: 200px 80px 40px;
   }
 }
 
@@ -104,16 +101,17 @@
 
   @media @tablet {
     position: absolute;
-    top: 262px;
+    bottom: -466px;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 0;
     z-index: -1;
   }
 
   @media @desktop {
     position: absolute;
-    top: 26%;
-    left: 59%;
+    bottom: -94px;
+    left: calc(50% + 114px);
     z-index: 0;
   }
 }
