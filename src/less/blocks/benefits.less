@@ -13,7 +13,11 @@
 
   @media @tablet {
     font-size: 60px;
-    line-height: 69px;
+    line-height: 60px;
+  }
+
+  @media @desktop {
+    margin-bottom: 32px;
   }
 }
 
@@ -28,8 +32,13 @@
   @media @tablet {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px 75px;
+    gap: 40px 75px;
     counter-reset: benefit;
+  }
+
+  @media @desktop {
+    gap: 0;
+    justify-content: space-between;
   }
 }
 
@@ -74,7 +83,7 @@
     line-height: 24px;
     width: 308px;
     min-height: 280px;
-    padding: 150px 0 0 0;
+    padding: 144px 0 0 0;
 
     &::before {
       top: 40px;
@@ -92,6 +101,16 @@
       .title(280px, 280px);
       color: @color-gray-light;
       z-index: -1;
+    }
+  }
+
+  @media @desktop {
+    width: 250px;
+    padding-top: 150px;
+
+    &::before {
+      top: 40px;
+      left: 4px;
     }
   }
 }

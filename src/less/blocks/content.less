@@ -12,8 +12,6 @@
 
   @media @tablet {
     background-image: none;
-    justify-content: start;
-    align-items: start;
   }
 
   @media @desktop {
@@ -34,6 +32,10 @@
   padding-top: 26px;
   padding-bottom: 24px;
 
+  @media @tablet {
+    padding-bottom: 0;
+  }
+
   @media @desktop {
     padding-top: 110px;
     padding-bottom: 0;
@@ -43,7 +45,7 @@
 .content__inner {
   position: relative;
   @media @tablet {
-    padding: 34px 87px 502px;
+    padding: 34px 87px 526px;
   }
   @media @desktop {
     padding: 114px 80px 184px;
@@ -55,7 +57,8 @@
   font-family: @font-title;
   font-size: 36px;
   line-height: 36px;
-  margin: 0 0 24px 0;
+  margin: 0;
+  margin-bottom: 24px;
   text-align: center;
 
   @media @tablet {
@@ -64,20 +67,20 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 44px;
+    margin-bottom: 44px;
   }
 
   @media @desktop {
     font-size: 60px;
     line-height: 60px;
     z-index: 2;
-    margin: 0 0 38px;
+    margin-bottom: 38px;
   }
 }
 
 .content__description {
   .text-white();
-  margin: 0 0 28px 0;
+  margin-bottom: 28px;
   font-family: @font-title;
   font-size: 14px;
   line-height: 14px;
@@ -89,12 +92,12 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin: 0 0 48px 0;
+    margin-bottom: 48px;
   }
 
   @media @desktop {
     z-index: 2;
-    margin: 0 0 50px 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -103,7 +106,7 @@
 
   @media @tablet {
     position: absolute;
-    bottom: -20px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 0;
