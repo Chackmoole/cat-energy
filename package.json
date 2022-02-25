@@ -1,7 +1,7 @@
 {
   "name": "CatEnergy",
   "description": "study project",
-  "version": "1.0",
+  "version": "1.0.0",
   "private": true,
   "devDependencies": {
     "autoprefixer": "10.4.2",

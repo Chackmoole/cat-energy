@@ -9,6 +9,10 @@
     min-height: 520px;
     margin-bottom: 10px;
   }
+
+  @media @desktop {
+    margin-bottom: 36px;
+  }
 }
 
 .slider__slice {
@@ -20,12 +24,27 @@
     z-index: 2;
     width: 50%;
     overflow: hidden;
-    background: linear-gradient(#fff 0, #fff 165px, #f2f2f2 165px, #f2f2f2 100%);
+    background: linear-gradient(
+      @color-white 0,
+      @color-white 165px,
+      @color-gray-light 165px,
+      @color-gray-light 100%
+    );
 
     &--hidden {
       z-index: 1;
       width: 100%;
     }
+  }
+
+  @media @desktop {
+    background: linear-gradient(
+      @color-white 0,
+      @color-white 195px,
+      @color-gray-light 195px,
+      @color-gray-light 100%
+    );
+    margin-left: 50px;
   }
 }
 
