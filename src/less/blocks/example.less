@@ -1,20 +1,19 @@
 .example {
-  background-color: @color-gray-light;
   padding-top: 28px;
   padding-bottom: 40px;
+  background-color: @color-gray-light;
 
   @media @tablet {
     padding-top: 48px;
     padding-bottom: 68px;
-
-    background-color: @color-white;
-
     background: linear-gradient(
       @color-white 0,
       @color-white 620px,
       @color-gray-light 620px,
       @color-gray-light 100%
     );
+
+    background-color: @color-white;
   }
 }
 
@@ -23,9 +22,9 @@
   margin-bottom: 32px;
 
   @media @tablet {
+    margin-bottom: 64px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 64px;
   }
 }
 
@@ -34,8 +33,8 @@
   color: @color-gray-dark;
 
   @media @tablet {
+    margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
   }
 }

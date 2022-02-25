@@ -8,49 +8,50 @@
 
   @media @tablet {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 70px 30px;
-    align-items: center;
   }
 }
 
 .map__title {
   .title(16px, 20px);
-  text-transform: uppercase;
   width: 50%;
+  text-transform: uppercase;
 
   @media @tablet {
-    font-size: 20px;
-    line-height: 21px;
     width: 180px;
     margin-left: 40px;
+    font-size: 20px;
+    line-height: 21px;
   }
+
 }
 
 .map__description {
-  line-height: 20px;
   width: 50%;
   margin: 0;
   color: @color-gray-dark;
+  line-height: 20px;
 
   @media @tablet {
-    font-size: 16px;
-    width: 160px;
-    margin-right: 40px;
-    text-align: right;
 
     & span {
-      margin-top: 12px;
       display: block;
+      margin-top: 12px;
     }
+    width: 160px;
+    margin-right: 40px;
+    font-size: 16px;
+    text-align: right;
   }
 }
 
 .map__box {
   position: relative;
-  background-image: url('../../img/map-mobile.jpg');
-  padding: 0;
   min-height: 362px;
+  padding: 0;
+  background-image: url('../../img/map-mobile.jpg');
 
   @media @tablet {
     background-image: url('../../img/map-tablet.jpg');
@@ -65,9 +66,9 @@
   height: 53px;
 
   @media @tablet {
+    top: 146px;
+    left: 333px;
     width: 113px;
     height: 106px;
-    left: 333px;
-    top: 146px;
   }
 }

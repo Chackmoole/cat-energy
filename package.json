@@ -1,34 +1,40 @@
 {
+  "name": "CatEnergy",
+  "description": "study project",
+  "version": "1.0",
   "private": true,
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "10.3.7",
-    "browser-sync": "2.27.5",
+    "autoprefixer": "10.4.2",
+    "browser-sync": "2.27.7",
+    "csscomb": "^4.3.0",
     "del": "6.0.0",
     "gulp": "4.0.2",
-    "gulp-html-bem-validator": "^1.0.5",
+    "gulp-html-bem-validator": "1.0.5",
     "gulp-htmlmin": "5.0.1",
     "gulp-less": "5.0.0",
     "gulp-libsquoosh": "1.0.12",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "gulp-rename": "2.0.0",
-    "gulp-svgmin": "^4.1.0",
-    "gulp-svgstore": "8.0.0",
+    "gulp-svgmin": "4.1.0",
+    "gulp-svgstore": "9.0.0",
     "gulp-terser": "2.1.0",
     "gulp-w3cjs": "1.3.2",
     "gulp-webp": "4.0.1",
-    "postcss": "8.3.9",
-    "postcss-csso": "5.0.1",
+    "postcss": "8.4.6",
+    "postcss-csso": "6.0.0",
+    "postcss-less": "6.0.0",
     "prettier": "2.5.1",
-    "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.10"
+    "prettier-stylelint": "0.4.2",
+    "stylelint": "^14.5.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended-less": "1.0.4",
+    "stylelint-less": "1.0.3",
+    "stylelint-order": "^5.0.0"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"src/less/**/*.less\" --syntax less",
-    "stylelint-fix": "stylelint \"src/less/**/*.less\" --syntax less --fix",
-    "test": "npm run editorconfig && npm run stylelint",
+    "stylelint": "stylelint \"src/less/**/*.less\"",
+    "stylelint-fix": "stylelint \"src/less/**/*.less\" --fix",
     "build": "gulp build",
     "start": "gulp",
     "validate": "gulp validate",
@@ -41,16 +47,5 @@
     "not op_mini all",
     "not < 0.25%"
   ],
-  "editorconfig-cli": [
-    "*.json",
-    "*.js",
-    "source/*.html",
-    "source/js//*.js",
-    "source/img//*.svg",
-    "source/less//*.less"
-  ],
-  "engines": {
-    "node": "14.18.1"
-  },
   "type": "module"
 }

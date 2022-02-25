@@ -15,6 +15,7 @@
   }
 
   @media @desktop {
+    margin-bottom: 86px;
     background: linear-gradient(
         90deg,
         @color-white 0,
@@ -24,7 +25,6 @@
       ),
       url('../../img/content-background-desktop-full.jpg') no-repeat calc(50% + 360px)
         bottom;
-    margin-bottom: 86px;
   }
 }
 
@@ -54,45 +54,45 @@
 
 .content__title {
   .text-white();
-  font-family: @font-title;
-  font-size: 36px;
-  line-height: 36px;
   margin: 0;
   margin-bottom: 24px;
+  font-size: 36px;
+  font-family: @font-title;
+  line-height: 36px;
   text-align: center;
 
   @media @tablet {
-    color: @color-black;
     max-width: 524px;
-    text-align: left;
+    margin-bottom: 44px;
+    color: @color-black;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 44px;
+    text-align: left;
   }
 
   @media @desktop {
-    font-size: 60px;
-    line-height: 60px;
     z-index: 2;
     margin-bottom: 38px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
 .content__description {
   .text-white();
   margin-bottom: 28px;
-  font-family: @font-title;
   font-size: 14px;
+  font-family: @font-title;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
 
   @media @tablet {
+    margin-bottom: 48px;
     color: @color-black;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin-bottom: 48px;
   }
 
   @media @desktop {
@@ -108,9 +108,9 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 0;
     z-index: -1;
+    margin-bottom: 0;
+    transform: translateX(-50%);
   }
 
   @media @desktop {
@@ -123,8 +123,8 @@
 
 .content__button {
   z-index: 1;
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
 
   @media @tablet {
     margin: 0;
