@@ -1,33 +1,12 @@
 {
   "customSyntax": "postcss-less",
-  "extends": ["stylelint-config-recommended-less", "stylelint-config-rational-order"],
-  "plugins": ["stylelint-less", "stylelint-order",
-    "stylelint-config-rational-order/plugin"],
+  "extends": [
+    "stylelint-config-recommended-less"
+  ],
+  "plugins": [
+    "stylelint-less"
+  ],
   "rules": {
-    "less/no-duplicate-variables": false,
-    "order/order": [
-      {
-        "type": "rule",
-        "name": "^.",
-        "hasBlock": false
-      },
-      "declarations",
-      {
-        "type": "rule",
-        "selector": "^&::(before|after)"
-      },
-      {
-        "type": "rule",
-        "selector": "^&:\\w"
-      },
-      {
-        "type": "rule",
-        "selector": "^&--"
-      },
-      {
-        "type": "at-rule",
-        "name": "media"
-      }
-    ]
+    "less/no-duplicate-variables": false
   }
 }
