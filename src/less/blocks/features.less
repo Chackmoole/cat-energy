@@ -1,7 +1,7 @@
 .features {
   display: flex;
-  gap: 20px;
   flex-direction: column;
+  gap: 20px;
 
   @media @tablet {
     gap: 30px;
@@ -16,8 +16,8 @@
 
 .features__wrapper {
   position: relative;
-  background-color: @color-gray-light;
   padding: 30px 20px 20px 20px;
+  background-color: @color-gray-light;
 
   @media @tablet {
     display: flex;
@@ -50,21 +50,21 @@
   }
 
   @media @tablet {
-    position: static;
-    width: 200px;
-    height: 211px;
-    margin-right: 34px;
 
     & svg {
       width: 100%;
       height: 100%;
     }
+    position: static;
+    width: 200px;
+    height: 211px;
+    margin-right: 34px;
 
     &--weight {
-      margin-right: 0;
-      margin-top: 14px;
       width: 268px;
       height: 200px;
+      margin-top: 14px;
+      margin-right: 0;
     }
   }
 
@@ -87,38 +87,39 @@
 
 .features__title {
   .title(24px, 37px);
-  text-transform: uppercase;
-  padding-left: 72px;
   margin-bottom: 28px;
+  padding-left: 72px;
+  text-transform: uppercase;
 
   @media @tablet {
-    font-size: 36px;
-    line-height: 36px;
     margin-bottom: 26px;
     padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media @desktop {
-    padding-left: 160px;
     margin-bottom: 74px;
+    padding-left: 160px;
   }
+
 }
 
 .features__descriptions {
   margin: 0;
-  line-height: 18px;
   margin-bottom: 16px;
-  border-bottom: 1px solid @color-gray;
   padding-bottom: 24px;
   color: @color-gray-dark;
+  line-height: 18px;
+  border-bottom: 1px solid @color-gray;
 
   @media @tablet {
+    width: 340px;
+    margin-bottom: 50px;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 50px;
     border: none;
-    padding: 0;
-    width: 340px;
   }
 
   @media @desktop {
@@ -128,35 +129,34 @@
 }
 
 .features__link {
-  .title(16px, 16px);
   position: relative;
+  padding: 4px 58px 4px 0;
   color: @color-black;
   text-transform: uppercase;
-  padding: 4px 58px 4px 0;
 
   &::after {
-    content: '';
     position: absolute;
-    right: 24px;
     top: 50%;
-    transform: translateY(-50%);
+    right: 24px;
     width: 18px;
     height: 2px;
     background-color: @color-black;
+    transform: translateY(-50%);
     transition: width 0.3s, right 0.3s;
+    content: '';
   }
 
   &::before {
-    content: '';
     position: absolute;
-    right: 18px;
     top: 50%;
-    transform: translateY(-50%);
+    right: 18px;
+    z-index: 2;
     background-color: transparent;
     border: 4px solid transparent;
     border-left: 4px solid @color-black;
-    z-index: 2;
+    transform: translateY(-50%);
     transition: right 0.3s;
+    content: '';
   }
 
   &:active::after {
@@ -174,6 +174,7 @@
   }
 
   @media @desktop {
+    .title(16px, 16px);
     &::after {
       right: 14px;
     }
@@ -195,4 +196,5 @@
       opacity: 0.3;
     }
   }
+
 }

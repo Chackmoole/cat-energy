@@ -4,12 +4,11 @@
   align-items: center;
   width: 24px;
   height: 24px;
-  border: none;
-  background-color: transparent;
   padding: 0;
+  background-color: transparent;
+  border: none;
 
   &::before {
-    content: '';
     position: absolute;
     top: 4px;
     left: 0;
@@ -17,23 +16,24 @@
     height: 2px;
     background-color: @color-black;
     box-shadow: 0 7px 0 0 @color-black;
+    content: '';
   }
 
   &::after {
-    content: '';
     position: absolute;
     bottom: 4px;
     left: 0;
     width: 24px;
     height: 2px;
     background-color: @color-black;
+    content: '';
   }
 
   &--close {
     &::before {
       top: 11px;
-      transform: rotate(-45deg);
       box-shadow: none;
+      transform: rotate(-45deg);
     }
 
     &::after {
