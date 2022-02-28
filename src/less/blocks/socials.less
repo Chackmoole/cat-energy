@@ -32,6 +32,12 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media @tablet {
+    width: 30px;
+    height: 22px;
+    background-size: 100%;
+  }
+
   &--instagram {
     background-image: url('../../img/icon_instagram.svg');
 
@@ -48,11 +54,5 @@
       width: 28px;
       height: 33px;
     }
-  }
-
-  @media @tablet {
-    width: 30px;
-    height: 22px;
-    background-size: 100%;
   }
 }

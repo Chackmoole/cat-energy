@@ -16,14 +16,22 @@
 }
 
 .slider__slice {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  background: @color-gray-light;
+
+  &--hidden {
+    z-index: 1;
+    width: 100%;
+  }
+
   @media @tablet {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
     width: 50%;
-    overflow: hidden;
     background: linear-gradient(
       @color-white 0,
       @color-white 165px,
