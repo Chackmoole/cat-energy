@@ -1,11 +1,7 @@
 .example {
-  padding-top: 28px;
-  padding-bottom: 40px;
   background-color: @color-gray-light;
 
   @media @tablet {
-    padding-top: 48px;
-    padding-bottom: 68px;
     background: linear-gradient(
       @color-white 0,
       @color-white 620px,
@@ -15,13 +11,7 @@
     background-color: @color-white;
   }
 
-  @media @tablet {
-    padding-top: 44px;
-    padding-bottom: 64px;
-  }
-
   @media @desktop {
-    padding-top: 12px;
     background: linear-gradient(
       @color-white 0,
       @color-white 205px,
@@ -32,8 +22,17 @@
 }
 
 .example__wrapper {
+  padding-top: 28px;
+  padding-bottom: 40px;
+
+  @media @tablet {
+    padding-top: 44px;
+    padding-bottom: 64px;
+  }
+
   @media @desktop {
     display: flex;
+    padding-top: 12px;
   }
 }
 
