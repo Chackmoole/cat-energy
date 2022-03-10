@@ -1,18 +1,12 @@
-.card-add {
+.show-more {
   margin: 0 auto;
   width: 320px;
   padding: 18px 20px 26px;
 
   @media @tablet {
-    padding: 8px 36px 39px;
+    padding: 45px 36px 39px;
     width: 324px;
-    min-height: 511px;
-    background: linear-gradient(
-      @color-white 0,
-      @color-white 81px,
-      @color-gray-light 81px,
-      @color-gray-light 100%
-    );
+    border: 1px solid @color-gray-light;
   }
 
   @media @desktop {
@@ -20,26 +14,39 @@
   }
 }
 
-.card-add__inner {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  margin-bottom: 20px;
+.show-more__inner {
+  margin-bottom: 6px;
+  padding: 5px 20px 15px;
 
   @media @tablet {
-    margin-bottom: 33px;
-    display: block;
+    margin-bottom: 66px;
+    padding: 5px 40px 15px;
+  }
+
+  @media @desktop {
+    padding: 4px 0 15px;
   }
 }
 
 .card__icon {
-  padding: 5px;
-  margin: 0 auto 14px;
+  height: 30px;
+  width: 30px;
+  margin: 0 auto 23px;
+  background-image: url('../../img/icon-show-more-small.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media @tablet {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 48px;
+    background-image: url('../../img/icon-show-more-big.svg');
+  }
 }
 
-.card-add__title {
+.show-more__title {
   .title(16px, 20px);
-  width: auto;
   text-transform: uppercase;
   color: @color-gray-deep;
   margin-bottom: 8px;
@@ -48,29 +55,29 @@
   @media @tablet {
     font-size: 20px;
     line-height: 24px;
-    width: 156px;
     text-align: center;
-    margin: 0 auto 13px;
+    margin: 0 auto 17px;
   }
 }
 
-.card-add__description {
+.show-more__description {
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
   padding: 0;
   margin: 0;
   text-align: center;
+  color: @color-gray-dark;
 
   @media @tablet {
     font-size: 16px;
     padding-top: 6px;
-    padding-bottom: 9px;
+    padding-bottom: 6px;
+    margin: 0 auto;
   }
 }
 
-.card-add__button {
-  min-height: 40px;
+.show-more__button {
   font-size: 16px;
   line-height: 20px;
   padding: 10px;

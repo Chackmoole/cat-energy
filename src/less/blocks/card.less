@@ -6,7 +6,7 @@
   @media @tablet {
     padding: 8px 36px 39px;
     width: 324px;
-    min-height: 511px;
+    margin: 0;
     background: linear-gradient(
       @color-white 0,
       @color-white 81px,
@@ -32,18 +32,14 @@
 }
 
 .card__picture {
-  flex-grow: 2;
-
-  & img {
-    margin: 0 auto;
-  }
+  margin: 0 auto;
 
   @media @tablet {
     margin-bottom: 34px;
   }
 }
 
-.card__table {
+.card__info {
   width: 140px;
 
   @media @tablet {
@@ -56,6 +52,8 @@
   justify-content: space-between;
 
   @media @tablet {
+    padding-top: 6px;
+    padding-bottom: 9px;
     border-bottom: 1px solid @color-gray;
   }
 }
@@ -83,6 +81,7 @@
   font-weight: 400;
   padding: 0;
   margin: 0;
+  color: @color-gray-dark;
 
   &--text-right {
     text-align: right;
@@ -90,18 +89,19 @@
 
   @media @tablet {
     font-size: 16px;
-    padding-top: 6px;
-    padding-bottom: 9px;
   }
 }
 
 .card__button {
-  min-height: 40px;
   font-size: 16px;
   line-height: 20px;
   padding: 10px;
   margin: 0 auto;
   display: block;
+
+  @media @tablet {
+    min-height: 40px;
+  }
 
   @media @desktop {
     width: 168px;
