@@ -5,6 +5,10 @@
 .map__wrapper {
   background-color: @color-white;
 
+  &--inner-page {
+    background-color: @color-gray-light;
+  }
+
   @media @desktop {
     position: relative;
   }
@@ -13,8 +17,7 @@
 .map__address {
   display: flex;
   justify-content: space-between;
-  padding: 14px 0 28px;
-  background-color: @color-white;
+  padding: 28px 0 28px;
 
   @media @tablet {
     align-items: center;
@@ -32,6 +35,7 @@
     padding-right: 44px;
     padding-left: 38px;
     z-index: 2;
+    background-color: @color-white;
   }
 }
 

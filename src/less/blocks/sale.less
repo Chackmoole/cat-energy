@@ -1,0 +1,34 @@
+.sale {
+  padding-top: 11px;
+  padding-bottom: 20px;
+  border-top: 1px solid @color-gray;
+
+  &:last-child {
+    border-bottom: 1px solid @color-gray;
+  }
+}
+
+.sale__title {
+  .title(16px, 16px);
+  color: @color-gray-deep;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.sale__box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.sale__description {
+  color: @color-gray-dark;
+  line-height: 14px;
+  margin: 0;
+}
+
+.sale__button {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+}
