@@ -2,6 +2,14 @@
   margin-bottom: 34px;
 }
 
+.cross-sale__inner {
+  @media @desktop {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+
 .cross-sale__list {
   list-style: none;
   padding: 0;
@@ -10,6 +18,10 @@
 
   @media @tablet {
     margin-bottom: 68px;
+  }
+
+  @media @desktop {
+    margin-bottom: 0;
   }
 }
 
@@ -46,6 +58,13 @@
       flex-shrink: 0;
     }
   }
+
+  @media @desktop {
+    background-image: url('../../img/gift_photo-desktop.jpg');
+    flex-direction: column;
+    gap: 46px;
+    padding: 56px 42px 42px;
+  }
 }
 
 .cross-sale__link {
@@ -57,5 +76,9 @@
 
   @media @tablet {
     text-align: left;
+  }
+
+  @media @desktop {
+    text-align: center;
   }
 }
