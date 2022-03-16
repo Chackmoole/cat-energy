@@ -7,23 +7,45 @@
   padding: 0;
   margin: 0;
   margin-bottom: 36px;
+
+  @media @tablet {
+    margin-bottom: 68px;
+  }
 }
 
 .cross-sale__gift {
-  background-image: linear-gradient(
-      180deg,
-      rgba(104, 183, 56, 0.85) 0,
-      rgba(104, 183, 56, 0.85) 302px,
-      @color-white 302px,
-      @color-white 100%
-    ),
-    url('../../img/gift_photo-mobile.jpg');
+  position: relative;
+  background-image: url('../../img/gift_photo-mobile.jpg');
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 46px;
   padding: 54px 60px 44px;
+  z-index: -2;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: @color-green;
+    opacity: 0.85;
+    z-index: -1;
+  }
+
+  @media @tablet {
+    background-image: url('../../img/gift_photo-tablet.jpg');
+    flex-direction: row;
+    gap: 265px;
+    padding: 58px 124px 58px 78px;
+
+    & svg {
+      flex-shrink: 0;
+    }
+  }
 }
 
 .cross-sale__link {
@@ -32,4 +54,8 @@
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+
+  @media @tablet {
+    text-align: left;
+  }
 }
