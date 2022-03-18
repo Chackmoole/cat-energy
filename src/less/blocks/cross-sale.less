@@ -1,5 +1,14 @@
 .cross-sale {
+  .with-line();
   margin-bottom: 34px;
+
+  @media @tablet {
+    margin-bottom: 78px;
+  }
+
+  @media @desktop {
+    margin-bottom: 94px;
+  }
 }
 
 .cross-sale__inner {
@@ -7,6 +16,15 @@
     display: flex;
     justify-content: space-between;
     gap: 80px;
+  }
+}
+
+.cross-sale__title {
+  .title();
+  margin-bottom: 36px;
+
+  @media @tablet {
+    margin-bottom: 80px;
   }
 }
 
