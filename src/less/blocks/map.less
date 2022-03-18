@@ -5,6 +5,10 @@
 .map__wrapper {
   background-color: @color-white;
 
+  &--inner-page {
+    background-color: @color-gray-light;
+  }
+
   @media @desktop {
     position: relative;
   }
@@ -13,14 +17,13 @@
 .map__address {
   display: flex;
   justify-content: space-between;
-  padding: 14px 0 28px;
-  background-color: @color-white;
+  padding: 28px 0 28px;
 
   @media @tablet {
     align-items: center;
     font-size: 20px;
     line-height: 21px;
-    padding: 64px 30px;
+    padding: 64px 40px;
   }
   @media @desktop {
     position: absolute;
@@ -29,9 +32,10 @@
     width: 570px;
     padding-top: 62px;
     padding-bottom: 66px;
-    padding-right: 44px;
-    padding-left: 38px;
+    padding-right: 76px;
+    padding-left: 89px;
     z-index: 2;
+    background-color: @color-white;
   }
 }
 
@@ -42,7 +46,6 @@
 
   @media @tablet {
     width: 180px;
-    margin-left: 40px;
     font-size: 20px;
     line-height: 21px;
   }
@@ -61,7 +64,6 @@
 
   @media @tablet {
     width: 160px;
-    margin-right: 40px;
     font-size: 16px;
     text-align: right;
 
