@@ -9,6 +9,14 @@
 
   @media @tablet {
     padding: 26px 38px 28px;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   @media @desktop {
@@ -17,6 +25,13 @@
     gap: 38px;
     padding: 15px 0;
     width: 896px;
+    &:first-child {
+      border-top: 1px solid @color-gray;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid @color-gray;
+    }
   }
 }
 
