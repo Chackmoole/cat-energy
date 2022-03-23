@@ -1,0 +1,49 @@
+.form__box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+
+  &:required:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    color: @color-gray-dark;
+    background-color: red;
+  }
+}
+
+.form__label {
+  .title(16px, 18px);
+  text-transform: uppercase;
+  color: @color-gray-dark;
+  order: 1;
+}
+
+.form__input {
+  .title(16px, 18px);
+  color: @color-gray-dark;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  width: 100%;
+  margin-left: 12px;
+  border: 1px solid @color-gray-light;
+  order: 2;
+  outline: none;
+
+  &:hover {
+    border-color: @color-gray;
+  }
+
+  &:focus-visible {
+    border-color: @color-gray-dark;
+    color: @color-gray-dark;
+  }
+
+  &--error {
+    border-color: @color-error;
+  }
+}
