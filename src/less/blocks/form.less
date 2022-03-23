@@ -1,26 +1,14 @@
 .form__box {
-  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 16px;
 
-  &:required:after {
-    position: absolute;
-    content: '';
-    right: 0;
-    top: 0;
-    width: 10px;
-    height: 10px;
-    color: @color-gray-dark;
-    background-color: red;
+  &:required::after {
   }
-}
 
-.form__label {
-  .title(16px, 18px);
-  text-transform: uppercase;
-  color: @color-gray-dark;
-  order: 1;
+  &:last-child {
+    margin-bottom: 24px;
+  }
 }
 
 .form__input {
@@ -29,7 +17,7 @@
   text-transform: uppercase;
   padding: 10px 20px;
   width: 100%;
-  margin-left: 12px;
+  margin-left: 4px;
   border: 1px solid @color-gray-light;
   order: 2;
   outline: none;
@@ -46,4 +34,21 @@
   &--error {
     border-color: @color-error;
   }
+
+  &:required + .form__label::after {
+    position: absolute;
+    content: '*';
+    right: 0;
+    top: 0;
+    color: @color-gray-dark;
+  }
+}
+
+.form__label {
+  position: relative;
+  .title(16px, 18px);
+  text-transform: uppercase;
+  color: @color-gray-dark;
+  order: 1;
+  padding-right: 8px;
 }
