@@ -1,10 +1,23 @@
+.form__head-inner {
+  @media @desktop {
+    width: 570px;
+  }
+}
+
+.form__head-wrapper {
+  margin-bottom: 24px;
+
+  @media @desktop {
+    margin-bottom: 70px;
+  }
+}
+
 .form__box {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
 
-  &:last-child {
-    margin-bottom: 24px;
+  &:not(:last-child) {
+    margin-bottom: 16px;
   }
 
   @media @tablet {
