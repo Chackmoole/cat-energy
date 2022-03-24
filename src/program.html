@@ -49,7 +49,7 @@
           Заполните анкету, и&nbsp;мы&nbsp;подберем <br />
           программу питания для вашего кота
         </p>
-        <form class="form" action="">
+        <form class="form" action="replacement">
           <div class="form__head-wrapper">
             <div class="form__head-inner">
               <div class="form__box">
@@ -76,6 +76,39 @@
                 <input class="form__input" type="text" id="age" placeholder="7" />
                 <label for="age" class="form__label">Возраст&nbsp;(лет):</label>
               </div>
+            </div>
+            <div class="radio">
+              <label class="radio__label">
+                <input
+                  class="radio__input visually-hidden"
+                  name="diet"
+                  type="radio"
+                  value="weight-loss"
+                  checked
+                />
+                <span class="radio__custom"></span>
+                <span>похудение</span>
+              </label>
+              <label class="radio__label">
+                <input
+                  class="radio__input visually-hidden"
+                  name="diet"
+                  value="weight-gain"
+                  type="radio"
+                />
+                <span class="radio__custom"></span>
+                <span>Набор массы</span>
+              </label>
+              <label class="radio__label">
+                <input
+                  class="radio__input visually-hidden"
+                  name="diet"
+                  value="advice"
+                  type="radio"
+                />
+                <span class="radio__custom"></span>
+                <span>Не знаю (Нужен ваш совет)</span>
+              </label>
             </div>
           </div>
         </form>
