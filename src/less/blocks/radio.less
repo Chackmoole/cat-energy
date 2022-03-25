@@ -5,6 +5,11 @@
   padding-bottom: 10px;
   border-top: 1px solid @color-gray;
   border-bottom: 1px solid @color-gray;
+
+  @media @tablet {
+    padding: 24px 28px;
+    border: 1px solid @color-gray;
+  }
 }
 
 .radio__label {
@@ -14,6 +19,11 @@
   color: @color-gray-dark;
   text-transform: uppercase;
   margin-bottom: 12px;
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   @media @desktop {
     &:hover .radio__custom {
@@ -42,6 +52,17 @@
     transform: translate(-50%, -50%);
     border-radius: 50%;
     display: none;
+  }
+
+  @media @tablet {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+
+    &::after {
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 
