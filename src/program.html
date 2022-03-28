@@ -43,41 +43,48 @@
     </header>
 
     <main>
-      <section class="layout program">
-        <h1 class="program__title">Подбор программы</h1>
-        <p class="program__description">
-          Заполните анкету, и&nbsp;мы&nbsp;подберем <br />
-          программу питания для вашего кота
-        </p>
-        <form class="form" action="replacement">
-          <div class="form__head-wrapper">
-            <div class="form__head-inner">
-              <div class="form__box">
-                <input
-                  class="form__input"
-                  type="text"
-                  id="name"
-                  placeholder="барсик"
-                  required
-                />
-                <label for="name" class="form__label">ИМЯ:</label>
-              </div>
-              <div class="form__box">
-                <input
-                  class="form__input"
-                  type="text"
-                  id="weight"
-                  placeholder="7"
-                  required
-                />
-                <label for="weight" class="form__label">Вес&nbsp;(кг):</label>
-              </div>
-              <div class="form__box">
-                <input class="form__input" type="text" id="age" placeholder="7" />
-                <label for="age" class="form__label">Возраст&nbsp;(лет):</label>
+      <section class="program">
+        <div class="layout">
+          <h1 class="program__title">Подбор программы</h1>
+          <p class="program__description">
+            Заполните анкету, и&nbsp;мы&nbsp;подберем <br />
+            программу питания для вашего кота
+          </p>
+        </div>
+
+        <form class="form" action="todo:replacement">
+          <div class="layout">
+            <div class="form__head-wrapper">
+              <div class="form__head-inner">
+                <div class="text-field form__box">
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    id="name"
+                    placeholder="барсик"
+                    required
+                  />
+                  <label class="text-field__label" for="name">ИМЯ:</label>
+                </div>
+                <div class="text-field form__box">
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    id="weight"
+                    placeholder="7"
+                    required
+                  />
+                  <label class="text-field__label" for="weight">Вес&nbsp;(кг):</label>
+                </div>
+                <div class="text-field form__box">
+                  <input class="text-field__input" type="text" id="age" placeholder="7" />
+                  <label class="text-field__label" for="age">Возраст&nbsp;(лет):</label>
+                </div>
               </div>
             </div>
-            <div class="radio">
+          </div>
+          <div class="radio">
+            <div class="layout">
               <label class="radio__label">
                 <input
                   class="radio__input visually-hidden"
@@ -111,8 +118,39 @@
               </label>
             </div>
           </div>
+
+          <div class="contacts">
+            <div class="layout">
+              <h2 class="form__title contacts__title">
+                Контактные данные (владельца кота)
+              </h2>
+              <div class="contacts__inner">
+                <div class="text-field form__box">
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    id="email"
+                    placeholder="кuklachev@gmail.com"
+                    required
+                  />
+                  <label class="text-field__label" for="email">E-&nbsp;mail:</label>
+                </div>
+                <div class="text-field form__box">
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    id="phone"
+                    placeholder="8 (960) 900-60-90"
+                    required
+                  />
+                  <label class="text-field__label" for="phone">Телефон:</label>
+                </div>
+              </div>
+            </div>
+          </div>
         </form>
       </section>
+
       <section class="map">
         <div class="layout map__wrapper map__wrapper--inner-page">
           <div class="map__address">
