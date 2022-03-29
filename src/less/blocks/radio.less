@@ -1,19 +1,43 @@
 .radio {
   display: flex;
   flex-direction: column;
-  padding-top: 22px;
-  padding-bottom: 10px;
+  padding: 22px 0;
   border-top: 1px solid @color-gray;
   border-bottom: 1px solid @color-gray;
   margin-bottom: 24px;
 
   @media @tablet {
-    padding: 24px 28px;
-    border: 1px solid @color-gray;
+    border: none;
+    padding: 0;
   }
 
   @media @desktop {
     width: 570px;
+  }
+}
+
+.radio__wrapper {
+  width: 320px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media @tablet {
+    padding: 0 30px;
+    width: 768px;
+  }
+
+  @media @desktop {
+    width: 1280px;
+    //margin: 0;
+  }
+}
+
+.radio__inner {
+  @media @tablet {
+    padding: 24px 28px;
+    border: 1px solid @color-gray;
+    margin: 0 40px;
   }
 }
 
@@ -23,7 +47,10 @@
   align-items: center;
   color: @color-gray-dark;
   text-transform: uppercase;
-  margin-bottom: 12px;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
 
   @media @tablet {
     font-size: 20px;

@@ -44,7 +44,7 @@
 
     <main>
       <section class="program">
-        <div class="layout">
+        <div class="layout program__box">
           <h1 class="program__title">Подбор программы</h1>
           <p class="program__description">
             Заполните анкету, и&nbsp;мы&nbsp;подберем <br />
@@ -53,7 +53,7 @@
         </div>
 
         <form class="form" action="todo:replacement">
-          <div class="layout">
+          <div class="form__block">
             <div class="form__head-wrapper">
               <div class="form__head-inner">
                 <div class="text-field form__box">
@@ -82,43 +82,44 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="radio">
-            <div class="layout">
-              <label class="radio__label">
-                <input
-                  class="radio__input visually-hidden"
-                  name="diet"
-                  type="radio"
-                  value="weight-loss"
-                  checked
-                />
-                <span class="radio__custom"></span>
-                <span>похудение</span>
-              </label>
-              <label class="radio__label">
-                <input
-                  class="radio__input visually-hidden"
-                  name="diet"
-                  value="weight-gain"
-                  type="radio"
-                />
-                <span class="radio__custom"></span>
-                <span>Набор массы</span>
-              </label>
-              <label class="radio__label">
-                <input
-                  class="radio__input visually-hidden"
-                  name="diet"
-                  value="advice"
-                  type="radio"
-                />
-                <span class="radio__custom"></span>
-                <span>Не знаю (Нужен ваш совет)</span>
-              </label>
+            <div class="radio">
+              <div class="radio__wrapper">
+                <div class="radio__inner">
+                  <label class="radio__label">
+                    <input
+                      class="radio__input visually-hidden"
+                      name="diet"
+                      type="radio"
+                      value="weight-loss"
+                      checked
+                    />
+                    <span class="radio__custom"></span>
+                    <span>похудение</span>
+                  </label>
+                  <label class="radio__label">
+                    <input
+                      class="radio__input visually-hidden"
+                      name="diet"
+                      value="weight-gain"
+                      type="radio"
+                    />
+                    <span class="radio__custom"></span>
+                    <span>Набор массы</span>
+                  </label>
+                  <label class="radio__label">
+                    <input
+                      class="radio__input visually-hidden"
+                      name="diet"
+                      value="advice"
+                      type="radio"
+                    />
+                    <span class="radio__custom"></span>
+                    <span>Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
-
           <div class="contacts">
             <div class="layout">
               <h2 class="form__title contacts__title">
