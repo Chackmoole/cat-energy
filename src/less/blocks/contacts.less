@@ -11,6 +11,18 @@
   @media @tablet {
     padding: 0 66px 0 70px;
   }
+
+  @media @desktop {
+    padding: 0 30px;
+  }
+}
+
+.contacts__inner {
+  @media @desktop {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
 }
 
 .contacts__title {
@@ -19,6 +31,25 @@
 
   @media @tablet {
     width: auto;
-    margin-bottom: 72px;
+    margin-bottom: 76px;
+  }
+}
+
+.contacts__box {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media @tablet {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media @desktop {
+    flex-grow: 1;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
