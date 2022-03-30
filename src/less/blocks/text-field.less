@@ -1,3 +1,28 @@
+.text-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 0;
+    height: 45px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--email::after {
+    background-image: url('../../img/icon_email.svg');
+  }
+
+  &--phone::after {
+    background-image: url('../../img/icon_phone.svg');
+  }
+}
+
 .text-field__input {
   .title(16px, 18px);
   color: @color-gray-dark;
@@ -8,6 +33,11 @@
   border: 1px solid @color-gray-light;
   order: 2;
   outline: none;
+
+  &--contacts {
+    margin-left: 8px;
+    padding-right: 36px;
+  }
 
   &:hover {
     border-color: @color-gray;
