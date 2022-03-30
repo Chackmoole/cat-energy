@@ -7,8 +7,9 @@
     content: '';
     position: absolute;
     right: 12px;
-    top: 0;
-    height: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
     width: 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,6 +21,12 @@
 
   &--phone::after {
     background-image: url('../../img/icon_phone.svg');
+  }
+
+  @media @tablet {
+    &::after {
+      right: 20px;
+    }
   }
 }
 
