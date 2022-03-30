@@ -1,13 +1,15 @@
-.form__block {
+.form__head-wrapper {
   @media @desktop {
     display: flex;
+    gap: 80px;
     margin: 0 auto;
+    margin-bottom: 72px;
     padding: 0 30px;
     width: 1280px;
   }
 }
 
-.form__head-wrapper {
+.form__head-inner {
   width: 320px;
   max-width: 1280px;
   margin: 0 auto;
@@ -23,14 +25,7 @@
   }
 
   @media @desktop {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 64px;
-  }
-}
-
-.form__head-inner {
-  @media @desktop {
+    padding: 0;
     width: 570px;
     margin-bottom: 0;
   }
