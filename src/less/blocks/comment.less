@@ -6,15 +6,26 @@
     display: block;
     line-height: 0;
   }
+
+  @media @tablet {
+    padding: 0 66px 0 70px;
+    margin-bottom: 68px;
+  }
 }
 
 .comment__title {
   margin-bottom: 38px;
+
+  @media @tablet {
+    margin-bottom: 76px;
+  }
 }
 
 .comment__field {
+  .title(16px, 18px);
   resize: none;
   width: 100%;
+  min-height: 150px;
   border: 1px solid @color-gray-light;
   padding: 10px 12px 10px 14px;
   color: @color-gray-dark;
@@ -23,6 +34,17 @@
     .title(16px, 18px);
     text-transform: uppercase;
     color: @color-gray-dark;
+  }
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 172px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   @media @desktop {
