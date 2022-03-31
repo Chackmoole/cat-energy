@@ -1,0 +1,39 @@
+.comment {
+  .with-line();
+  margin-bottom: 24px;
+
+  & label {
+    display: block;
+    line-height: 0;
+  }
+}
+
+.comment__title {
+  margin-bottom: 38px;
+}
+
+.comment__field {
+  resize: none;
+  width: 100%;
+  border: 1px solid @color-gray-light;
+  padding: 10px 12px 10px 14px;
+  color: @color-gray-dark;
+
+  &::placeholder {
+    .title(16px, 18px);
+    text-transform: uppercase;
+    color: @color-gray-dark;
+  }
+
+  @media @desktop {
+    outline: none;
+    &:hover {
+      border-color: @color-gray;
+    }
+
+    &:focus-visible {
+      border-color: @color-gray-dark;
+      color: @color-gray-dark;
+    }
+  }
+}
