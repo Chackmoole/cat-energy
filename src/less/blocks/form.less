@@ -1,3 +1,7 @@
+.form__title {
+  .subtitle();
+}
+
 .form__head-wrapper {
   margin-bottom: 24px;
 
@@ -49,6 +53,292 @@
   }
 }
 
-.form__title {
-  .subtitle();
+.form__radio {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 0;
+  border-top: 1px solid @color-gray;
+  border-bottom: 1px solid @color-gray;
+
+  @media @tablet {
+    border: none;
+    padding: 0;
+  }
+
+  @media @desktop {
+    width: 570px;
+    margin-bottom: 0;
+  }
+}
+
+.form__radio-wrapper {
+  width: 320px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media @tablet {
+    padding: 0 30px;
+    width: 768px;
+  }
+
+  @media @desktop {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.form__radio-inner {
+  @media @tablet {
+    padding: 24px 28px;
+    border: 1px solid @color-gray;
+    margin: 0 40px;
+  }
+  @media @desktop {
+    margin: 0;
+  }
+}
+
+.form__contacts {
+  .with-line();
+  margin-bottom: 26px;
+
+  @media @tablet {
+    margin-bottom: 64px;
+  }
+}
+
+.form__contacts-wrapper {
+  @media @tablet {
+    padding: 0 66px 0 70px;
+  }
+
+  @media @desktop {
+    padding: 0 30px;
+    margin-bottom: 68px;
+  }
+}
+
+.form__contacts-title {
+  width: 221px;
+  margin-bottom: 36px;
+
+  @media @tablet {
+    width: auto;
+    margin-bottom: 76px;
+  }
+}
+
+.form__contacts-inner {
+  @media @desktop {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+
+.form__contacts-box {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media @tablet {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media @desktop {
+    flex-grow: 1;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__comment {
+  .with-line();
+  margin-bottom: 24px;
+
+  & label {
+    display: block;
+    line-height: 0;
+  }
+
+  @media @tablet {
+    margin-bottom: 68px;
+  }
+
+  @media @desktop {
+    margin-bottom: 72px;
+  }
+}
+
+.form__comment-wrapper {
+  @media @tablet {
+    padding: 0 66px 0 70px;
+  }
+
+  @media @desktop {
+    padding: 0 30px;
+  }
+}
+
+.form__comment-title {
+  margin-bottom: 38px;
+
+  @media @tablet {
+    margin-bottom: 76px;
+  }
+}
+
+.form__comment-field {
+  .title(16px, 18px);
+  resize: none;
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid @color-gray-light;
+  padding: 10px 12px 10px 14px;
+  color: @color-gray-dark;
+
+  &::placeholder {
+    .title(16px, 18px);
+    text-transform: uppercase;
+    color: @color-gray-dark;
+  }
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 172px;
+    padding: 10px 20px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  @media @desktop {
+    outline: none;
+    &:hover {
+      border-color: @color-gray;
+    }
+
+    &:focus-visible {
+      border-color: @color-gray-dark;
+      color: @color-gray-dark;
+    }
+  }
+}
+
+.form__additional {
+  .with-line();
+  line-height: 0;
+}
+
+.form__additional-wrapper {
+  @media @tablet {
+    padding: 0 70px;
+  }
+
+  @media @desktop {
+    padding: 0 30px;
+  }
+}
+
+.form__additional-title {
+  margin-bottom: 34px;
+
+  @media @tablet {
+    margin-bottom: 56px;
+  }
+}
+
+.form__additional-list {
+  padding: 0;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 34px;
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 0;
+    margin-bottom: 54px;
+  }
+
+  @media @desktop {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+
+.form__additional-item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  @media @tablet {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(odd) {
+      width: 344px;
+    }
+  }
+
+  @media @desktop {
+    min-width: 221px;
+    &:nth-child(odd) {
+      width: auto;
+    }
+
+    &:last-child {
+      margin-right: 24px;
+    }
+  }
+}
+
+.form__additional-box {
+  @media @tablet {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+
+  @media @desktop {
+    gap: 80px;
+  }
+}
+
+.form__button {
+  .title(16px, 20px);
+  text-transform: uppercase;
+  color: @color-white;
+  margin-bottom: 20px;
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 30px;
+    min-width: 282px;
+    padding: 11px 45px;
+    margin-bottom: 0;
+  }
+
+  @media @desktop {
+    min-width: 568px;
+  }
+}
+
+.form__info {
+  line-height: 16px;
+  display: block;
+  text-align: center;
+
+  @media @tablet {
+    font-size: 16px;
+  }
 }
