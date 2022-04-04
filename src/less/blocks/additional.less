@@ -5,6 +5,10 @@
   @media @tablet {
     padding: 0 70px;
   }
+
+  @media @desktop {
+    padding: 0 30px;
+  }
 }
 
 .additional__title {
@@ -27,6 +31,11 @@
     gap: 32px 0;
     margin-bottom: 54px;
   }
+
+  @media @desktop {
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
 .additional__item {
@@ -43,6 +52,17 @@
       width: 344px;
     }
   }
+
+  @media @desktop {
+    min-width: 221px;
+    &:nth-child(odd) {
+      width: auto;
+    }
+
+    &:last-child {
+      margin-right: 24px;
+    }
+  }
 }
 
 .additional__box {
@@ -50,6 +70,10 @@
     display: flex;
     gap: 60px;
     align-items: center;
+  }
+
+  @media @desktop {
+    gap: 80px;
   }
 }
 
@@ -65,6 +89,10 @@
     min-width: 282px;
     padding: 11px 45px;
     margin-bottom: 0;
+  }
+
+  @media @desktop {
+    min-width: 568px;
   }
 }
 
