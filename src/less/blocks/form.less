@@ -90,7 +90,11 @@
 }
 
 .form__radio-inner {
+  display: inline-flex;
+  flex-direction: column;
+
   @media @tablet {
+    display: flex;
     padding: 24px 28px;
     border: 1px solid @color-gray;
     margin: 0 40px;
