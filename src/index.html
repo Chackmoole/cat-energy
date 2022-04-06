@@ -41,11 +41,20 @@
             <h1 class="content__title">Функциональное питание для котов</h1>
             <p class="content__description">Занялся собой? Займись котом!</p>
             <picture>
-              <source srcset="img/content-img-desktop.png" media="(min-width: 1280px)" />
-              <source srcset="img/content-img-tablet.jpg" media="(min-width: 768px)" />
+              <source
+                srcset="img/content-img-desktop.png, img/content-img-desktop@2x.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="img/content-img-tablet.jpg, img/content-img-tablet@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="img/content-img-mobile.png, img/content-img-mobile@2x.png 2x"
+              />
               <img
                 class="content__img"
-                src="img/content-img.png"
+                src="img/content-img-mobile.png"
                 alt="изображение корма cat energy pro"
               />
             </picture>
@@ -181,9 +190,13 @@
             <div class="slider__inner">
               <div class="slider__slice">
                 <picture class="slider__image">
-                  <source srcset="img/cat-fat-tablet.png" media="(min-width: 768px)" />
+                  <source
+                    srcset="img/cat-fat-tablet.png, img/cat-fat-tablet@2x.png 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source srcset="img/cat-fat-mobile.png, img/cat-fat-mobile@2x.png 2x" />
                   <img
-                    src="img/fat.png"
+                    src="img/cat-fat-mobile.png"
                     alt="изображение кота до приема корма cat energy"
                   />
                 </picture>
@@ -191,9 +204,15 @@
 
               <div class="slider__slice slider__slice--hidden">
                 <picture class="slider__image">
-                  <source srcset="img/cat-skinny-tablet.png" media="(min-width: 768px)" />
+                  <source
+                    srcset="img/cat-skinny-tablet.png, img/cat-skinny-tablet@2x.png 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="img/cat-skinny-mobile.png, img/cat-skinny-mobile@2x.png 2x"
+                  />
                   <img
-                    src="img/skinny.png"
+                    src="img/cat-skinny-mobile.png"
                     alt="изображение кота после приема корма cat energy"
                   />
                 </picture>
