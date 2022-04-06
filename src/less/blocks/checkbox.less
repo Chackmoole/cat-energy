@@ -46,13 +46,11 @@
   display: none;
 }
 
-.checkbox__input:checked ~ .checkbox__label .checkbox__custom .checkbox__mark {
+.checkbox__input:checked ~ .checkbox__label .checkbox__mark {
   display: block;
 }
 
-.checkbox__input:disabled {
-  & ~ .checkbox__label {
-    opacity: 0.3;
-    pointer-events: none;
-  }
+.checkbox__input:disabled ~ .checkbox__label {
+  opacity: 0.3;
+  pointer-events: none;
 }
