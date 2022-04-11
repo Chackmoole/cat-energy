@@ -1,0 +1,31 @@
+.button {
+  min-width: 280px;
+  min-height: 40px;
+  padding: 11px;
+  color: @color-white;
+  font-size: 14px;
+  font-family: @font-title;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: @color-green;
+  border: none;
+
+  &:hover {
+    background-color: @color-green-dark;
+  }
+
+  &:active {
+    color: fade(@color-white, 30%);
+  }
+
+  @media @tablet {
+    min-width: 244px;
+    padding: 7px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media @desktop {
+    min-width: 168px;
+  }
+}

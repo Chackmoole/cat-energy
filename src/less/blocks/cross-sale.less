@@ -1,0 +1,104 @@
+.cross-sale {
+  .with-line();
+  margin-bottom: 34px;
+
+  @media @tablet {
+    margin-bottom: 78px;
+  }
+
+  @media @desktop {
+    margin-bottom: 94px;
+  }
+}
+
+.cross-sale__inner {
+  @media @desktop {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+
+.cross-sale__title {
+  .subtitle();
+  margin-bottom: 36px;
+
+  @media @tablet {
+    margin-bottom: 80px;
+  }
+}
+
+.cross-sale__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media @tablet {
+    margin-bottom: 68px;
+    border: 1px solid @color-gray-silver;
+  }
+
+  @media @desktop {
+    margin-bottom: 0;
+    border: none;
+  }
+}
+
+.cross-sale__gift {
+  position: relative;
+  background-image: url('../img/gift_photo-mobile.jpg');
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 46px;
+  padding: 54px 60px 44px;
+  z-index: -2;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: @color-green;
+    opacity: 0.85;
+    z-index: -1;
+  }
+
+  @media @tablet {
+    background-image: url('../img/gift_photo-tablet.jpg');
+    flex-direction: row;
+    gap: 265px;
+    padding: 58px 124px 58px 78px;
+
+    & svg {
+      flex-shrink: 0;
+    }
+  }
+
+  @media @desktop {
+    background-image: url('../img/gift_photo-desktop.jpg');
+    flex-direction: column;
+    gap: 46px;
+    padding: 56px 42px 42px;
+  }
+}
+
+.cross-sale__link {
+  display: block;
+  color: @color-white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media @tablet {
+    text-align: left;
+  }
+
+  @media @desktop {
+    text-align: center;
+  }
+}

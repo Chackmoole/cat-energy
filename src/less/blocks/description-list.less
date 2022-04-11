@@ -1,0 +1,122 @@
+.description-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 32px;
+  justify-content: center;
+  margin: 0 0 32px 0;
+  font-family: @font-title;
+  text-align: center;
+
+  @media @tablet {
+    gap: 24px;
+    justify-content: start;
+    margin-bottom: 78px;
+  }
+
+  @media @desktop {
+    gap: 42px;
+    margin-bottom: 0;
+  }
+}
+
+.description-list__title {
+  margin-right: 4px;
+  text-transform: uppercase;
+
+  @media @tablet {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media @desktop {
+    margin-right: 62px;
+  }
+}
+
+.description-list__item {
+  margin: 0;
+
+  @media @tablet {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+.description-list__box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  @media @tablet {
+    margin-left: auto;
+  }
+
+  &--allotted {
+    & .description-list__title {
+      position: absolute;
+      bottom: 0;
+      width: 80px;
+      margin: 0;
+      color: @color-gray-dark;
+      font-size: 12px;
+      font-family: @font-text;
+      line-height: 12px;
+      text-transform: lowercase;
+      background-color: @color-gray-light;
+
+      @media @tablet {
+        bottom: 8px;
+        left: 50px;
+        width: 140px;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        background-color: @color-white;
+        transform: translateX(-28%);
+      }
+
+      @media @desktop {
+        background-color: @color-gray-light;
+      }
+    }
+
+    & .description-list__item {
+      .title(24px, 24px);
+      width: 124px;
+      padding: 14px 8px 18px;
+      text-transform: uppercase;
+      border: 1px solid @color-gray;
+      border-radius: 3px;
+
+      @media @tablet {
+        width: 162px;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+      }
+    }
+
+    padding-bottom: 14px;
+
+    @media @tablet {
+      width: 162px;
+      margin-left: 0;
+    }
+  }
+
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+  }
+
+  @media @desktop {
+    flex-direction: row;
+    margin-left: 0;
+    width: auto;
+  }
+}

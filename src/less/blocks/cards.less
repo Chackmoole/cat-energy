@@ -1,0 +1,31 @@
+.cards {
+  list-style: none;
+  width: auto;
+  max-width: none;
+  padding: 0;
+  margin: 0 0 24px;
+
+  @media @tablet {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 60px;
+    max-width: 768px;
+    padding: 0 30px;
+    margin: 0 auto 68px;
+  }
+
+  @media @desktop {
+    max-width: 1280px;
+    gap: 63px 80px;
+    margin-bottom: 75px;
+  }
+}
+
+.cards__item {
+  border-bottom: 1px solid @color-gray-silver;
+
+  @media @tablet {
+    border: none;
+  }
+}

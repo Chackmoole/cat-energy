@@ -1,0 +1,74 @@
+.example {
+  background-color: @color-gray-light;
+
+  @media @tablet {
+    background: linear-gradient(
+      @color-white 0,
+      @color-white 620px,
+      @color-gray-light 620px,
+      @color-gray-light 100%
+    );
+    background-color: @color-white;
+  }
+
+  @media @desktop {
+    background: linear-gradient(
+      @color-white 0,
+      @color-white 205px,
+      @color-gray-light 205px,
+      @color-gray-light 100%
+    );
+  }
+}
+
+.example__wrapper {
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  @media @tablet {
+    padding-top: 44px;
+    padding-bottom: 64px;
+  }
+
+  @media @desktop {
+    display: flex;
+    padding-top: 12px;
+  }
+}
+
+.example__inner {
+  @media @desktop {
+    padding-top: 58px;
+  }
+}
+
+.example__title {
+  .title(36px, 40px);
+  margin-bottom: 32px;
+
+  @media @tablet {
+    margin-bottom: 64px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media @desktop {
+    margin-bottom: 146px;
+  }
+}
+
+.example__description {
+  margin: 0 0 24px 0;
+  color: @color-gray-dark;
+
+  @media @tablet {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media @desktop {
+    width: 436px;
+    margin-bottom: 70px;
+  }
+}

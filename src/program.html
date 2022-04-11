@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Cat Energy выбор программы</title>
+  </head>
+  <body>
+    <header class="header header--inner-page layout">
+      <a class="header__link" href="#">
+        <picture>
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1280px)" />
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)" />
+          <img src="img/logo-mobile.svg" alt="логотип cat energy" />
+        </picture>
+      </a>
+      <a class="header__logo" href="#">
+        <img src="img/logo-mobile2.svg" width="101" height="18" alt="" />
+      </a>
+      <button class="burger-button">
+        <span class="visually-hidden">кнопка меню навигации по сайту</span>
+      </button>
+      <nav class="navigation navigation--disable">
+        <a class="navigation__item navigation__item--inner-page" href="index.html"
+          >главная</a
+        >
+        <a class="navigation__item navigation__item--inner-page" href="catalog.html">
+          каталог продукции
+        </a>
+        <a
+          class="navigation__item navigation__item--inner-page navigation__item--active"
+          href="program.html"
+          >подбор программы</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="program">
+        <div class="layout program__box">
+          <h1 class="program__title">Подбор программы</h1>
+          <p class="program__description">
+            Заполните анкету, и&nbsp;мы&nbsp;подберем <br />
+            программу питания для вашего кота
+          </p>
+        </div>
+
+        <form class="form" action="TODO:replacement">
+          <div class="form__head-wrapper">
+            <div class="form__head-inner">
+              <div class="text-field form__box">
+                <input
+                  class="text-field__input"
+                  type="text"
+                  id="name"
+                  placeholder="барсик"
+                  required
+                />
+                <label class="text-field__label" for="name">ИМЯ:</label>
+              </div>
+              <div class="text-field form__box">
+                <input
+                  class="text-field__input"
+                  type="text"
+                  id="weight"
+                  placeholder="7"
+                  required
+                />
+                <label class="text-field__label" for="weight">Вес&nbsp;(кг):</label>
+              </div>
+              <div class="text-field form__box">
+                <input class="text-field__input" type="text" id="age" placeholder="7" />
+                <label class="text-field__label" for="age">Возраст&nbsp;(лет):</label>
+              </div>
+            </div>
+            <div class="form__radio">
+              <div class="form__radio-wrapper">
+                <label class="radio">
+                  <input
+                    class="radio__input visually-hidden"
+                    name="diet"
+                    type="radio"
+                    value="weight-loss"
+                    checked
+                  />
+                  <span class="radio__custom"></span>
+                  <span>похудение</span>
+                </label>
+                <label class="radio">
+                  <input
+                    class="radio__input visually-hidden"
+                    name="diet"
+                    value="weight-gain"
+                    type="radio"
+                  />
+                  <span class="radio__custom"></span>
+                  <span>Набор массы</span>
+                </label>
+                <label class="radio">
+                  <input
+                    class="radio__input visually-hidden"
+                    name="diet"
+                    value="advice"
+                    type="radio"
+                  />
+                  <span class="radio__custom"></span>
+                  <span>Не знаю (Нужен ваш совет)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form__contacts">
+            <div class="layout form__contacts-wrapper">
+              <h2 class="form__title form__contacts-title">
+                Контактные данные (владельца кота)
+              </h2>
+              <div class="form__contacts-inner">
+                <div class="text-field text-field--email form__contacts-box">
+                  <input
+                    class="text-field__input text-field__input--contacts"
+                    type="text"
+                    id="email"
+                    placeholder="кuklachev@gmail.com"
+                    required
+                  />
+                  <label class="text-field__label" for="email">E-&nbsp;mail:</label>
+                </div>
+                <div class="text-field text-field--phone form__contacts-box">
+                  <input
+                    class="text-field__input text-field__input--contacts"
+                    type="text"
+                    id="phone"
+                    placeholder="8 (960) 900-60-90"
+                    required
+                  />
+                  <label class="text-field__label" for="phone">Телефон:</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form__comment">
+            <div class="layout form__comment-wrapper">
+              <h2 class="form__title form__comment-title">Комментарий</h2>
+              <label for="comment">
+                <textarea
+                  class="form__comment-field"
+                  name="comment"
+                  id="comment"
+                  cols="30"
+                  rows="2"
+                  placeholder="Расскажите обо всех повАдках кота"
+                ></textarea>
+              </label>
+            </div>
+          </div>
+          <div class="form__additional">
+            <div class="layout form__additional-wrapper">
+              <h2 class="form__title form__additional-title">Дополнительно</h2>
+              <ul class="form__additional-list">
+                <li class="form__additional-item">
+                  <div class="checkbox">
+                    <input
+                      class="checkbox__input visually-hidden"
+                      name="sugar-free"
+                      id="sugar-free"
+                      type="checkbox"
+                      checked
+                    />
+                    <label class="checkbox__label" for="sugar-free">
+                      <span class="checkbox__custom">
+                        <svg
+                          class="checkbox__mark"
+                          width="19"
+                          height="15"
+                          viewBox="0 0 19 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z"
+                            fill="#68B738"
+                          />
+                        </svg>
+                      </span>
+                      <span class="checkbox__text">сахарозаменитель</span>
+                    </label>
+                  </div>
+                </li>
+                <li class="form__additional-item">
+                  <div class="checkbox">
+                    <input
+                      class="checkbox__input visually-hidden"
+                      name="water"
+                      id="water"
+                      type="checkbox"
+                    />
+                    <label class="checkbox__label" for="water">
+                      <span class="checkbox__custom">
+                        <svg
+                          class="checkbox__mark"
+                          width="19"
+                          height="15"
+                          viewBox="0 0 19 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z"
+                            fill="#68B738"
+                          />
+                        </svg>
+                      </span>
+                      <span class="checkbox__text">питьевая вода</span>
+                    </label>
+                  </div>
+                </li>
+                <li class="form__additional-item">
+                  <div class="checkbox">
+                    <input
+                      class="checkbox__input visually-hidden"
+                      name="milk"
+                      id="milk"
+                      type="checkbox"
+                    />
+                    <label class="checkbox__label" for="milk">
+                      <span class="checkbox__custom">
+                        <svg
+                          class="checkbox__mark"
+                          width="19"
+                          height="15"
+                          viewBox="0 0 19 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z"
+                            fill="#68B738"
+                          />
+                        </svg>
+                      </span>
+                      <span class="checkbox__text">молоко</span>
+                    </label>
+                  </div>
+                </li>
+                <li class="form__additional-item">
+                  <div class="checkbox">
+                    <input
+                      class="checkbox__input visually-hidden"
+                      name="vitamins"
+                      id="vitamins"
+                      type="checkbox"
+                    />
+                    <label class="checkbox__label" for="vitamins">
+                      <span class="checkbox__custom">
+                        <svg
+                          class="checkbox__mark"
+                          width="19"
+                          height="15"
+                          viewBox="0 0 19 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z"
+                            fill="#68B738"
+                          />
+                        </svg>
+                      </span>
+                      <span class="checkbox__text">витамины</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+              <div class="form__additional-box">
+                <button class="button form__button" type="submit">
+                  отправить заявку
+                </button>
+                <span class="form__info">* — Обязательные поля</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="map">
+        <div class="layout map__wrapper map__wrapper--inner-page">
+          <div class="map__address">
+            <h3 class="map__title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
+            <p class="map__description">
+              ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="layout map__box">
+          <picture>
+            <source srcset="img/map-pin-tablet.png" media="(min-width: 768px)" />
+            <img
+              class="map__mark"
+              src="img/marker-icon.png"
+              alt="карта расположения компании cat energy"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="layout footer__wrapper">
+        <div class="footer__logo-box">
+          <a class="footer__logo" href="index.html">
+            <img
+              class="footer__img"
+              src="img/footer-logo.svg"
+              alt="логотип компании cat energy"
+            />
+          </a>
+        </div>
+        <section class="socials">
+          <h3 class="visually-hidden">
+            список ссылок перехода в социальные сети компании cat energy
+          </h3>
+          <ul class="socials__list">
+            <li>
+              <a class="socials__link socials__link--vk" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li>
+              <a class="socials__link socials__link--instagram" href="#">
+                <span class="visually-hidden">instagram</span>
+              </a>
+            </li>
+            <li>
+              <a class="socials__link socials__link--facebook" href="#">
+                <span class="visually-hidden">facebook</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="footer__copyright">
+          <a class="footer__link" href="https://htmlacademy.ru/">
+            HTML&nbsp;Academy
+            <img src="img/logo_html.svg" alt="логотип HTML academy" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

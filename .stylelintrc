@@ -1,3 +1,12 @@
 {
-  "extends": "stylelint-config-htmlacademy"
+  "customSyntax": "postcss-less",
+  "extends": [
+    "stylelint-config-recommended-less"
+  ],
+  "plugins": [
+    "stylelint-less"
+  ],
+  "rules": {
+    "less/no-duplicate-variables": false
+  }
 }
