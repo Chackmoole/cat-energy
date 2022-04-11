@@ -163,7 +163,3 @@ export default gulp.series(
   gulp.parallel(styles, html, scripts, svg, sprite, createWebp),
   gulp.series(server, watcher)
 );
-
-export const deploy = () => {
-  return ghPages.publish('build');
-};
