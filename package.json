@@ -43,5 +43,8 @@
     "not op_mini all",
     "not < 0.25%"
   ],
-  "type": "module"
+  "type": "module",
+  "resolutions": {
+    "gift": "0.10.2"
+  }
 }
