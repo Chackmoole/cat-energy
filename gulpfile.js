@@ -15,6 +15,7 @@ import del from 'del';
 import browser from 'browser-sync';
 import htmlBemValidator from 'gulp-html-bem-validator';
 import htmlValidator from 'gulp-w3cjs';
+import ghPages from 'gh-pages';
 
 const validateHtml = () => {
   return gulp.src('build/**/*.html').pipe(htmlValidator()).pipe(htmlValidator.reporter());
@@ -162,3 +163,7 @@ export default gulp.series(
   gulp.parallel(styles, html, scripts, svg, sprite, createWebp),
   gulp.series(server, watcher)
 );
+
+export const deploy = () => {
+  return ghPages.publish('build');
+};
